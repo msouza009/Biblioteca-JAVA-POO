@@ -10,6 +10,11 @@ public class Biblioteca {
         System.out.println("Qual é o titulo ? " + livro2.getTitulo());
         System.out.println("Qual é o autor ? " + livro2.getAutor());
         System.out.println("Qual é o ano ? " + livro2.getAnoPublicacao());
+
+        livro1.emprestar();
         System.out.println("O livro está disponivel? " + livro2.isDisponibilidade());
+        livro1.devolver();
+        System.out.println("O livro está disponivel? " + livro2.isDisponibilidade());
+
     }
 }
