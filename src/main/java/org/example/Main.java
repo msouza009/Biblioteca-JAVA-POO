@@ -7,8 +7,8 @@ public class Main {
 
 
     Calculadora calc = new Calculadora(10,10);
+        System.out.println("Resultado 2 + 3 = " + new Calculadora(2,3).somar());
 
-    new Calculadora(2,3);
         System.out.println("Resultado 10 + 10 = " + calc.somar());
         System.out.println("Resultado 10 - 10 = " + calc.subtrair());
 
