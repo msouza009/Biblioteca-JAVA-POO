@@ -30,6 +30,22 @@ public class Livro {
         return disponibilidade;
     }
 
-    public void emprestar(){}
-    public  void devolver(){}
+    public void emprestar(){
+        // se o livro esta disponivel
+        if (disponibilidade){
+            disponibilidade = false;
+            System.out.println("O livro " + titulo + " foi emprestado");
+        } else {
+            System.out.println("O livro " + titulo + " não está disponivel");
+        }
+    }
+
+    public  void devolver(){
+        if (disponibilidade) {
+            System.out.println("O livro " + titulo + " não foi emprestado");
+        } else {
+            disponibilidade = true;
+            System.out.println("O livro " + titulo + " foi devolvido");
+        }
+    }
 }
