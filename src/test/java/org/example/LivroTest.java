@@ -36,6 +36,7 @@ public class LivroTest {
     }
     @Test
     public void testDevolver(){
+        livro.emprestar();
         assertFalse(livro.isDisponibilidade());
         livro.devolver();
         assertTrue(livro.isDisponibilidade());
