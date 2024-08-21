@@ -26,7 +26,8 @@ public class Livro {
         return anoPublicacao;
     }
 
-    public boolean isDisponibilidade() {
+    public boolean isDisponibilidade()
+    {
         return disponibilidade;
     }
 
@@ -42,9 +43,9 @@ public class Livro {
 
     public  void devolver(){
         if (disponibilidade) {
+            disponibilidade = false;
             System.out.println("O livro " + titulo + " não foi emprestado");
         } else {
-            disponibilidade = true;
             System.out.println("O livro " + titulo + " foi devolvido");
         }
     }
