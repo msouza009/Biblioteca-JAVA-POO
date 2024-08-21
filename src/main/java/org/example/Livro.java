@@ -42,8 +42,8 @@ public class Livro {
     }
 
     public  void devolver(){
-        if (disponibilidade) {
-            disponibilidade = false;
+        if (!disponibilidade) {
+            disponibilidade = true;
             System.out.println("O livro " + titulo + " não foi emprestado");
         } else {
             System.out.println("O livro " + titulo + " foi devolvido");
